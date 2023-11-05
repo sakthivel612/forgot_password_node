@@ -27,7 +27,7 @@ module.exports = router;
 const mongoose = require("mongoose");
 const dbUrl = "mongodb://127.0.0.1:27017/forgot_password_db";
 
-mongoose.connect(dbUrl, { useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect(dbUrl, { useUnifiedTopology: true });
 const db = mongoose.connection;
 
 db.on("error", console.error.bind(console, "MongoDB connection error:"));
