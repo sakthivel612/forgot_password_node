@@ -37,7 +37,6 @@ db.once("open", () => {
 
 const User = require("./model/schema");
 
-
 async function saveUser() {
   const newUser = new User({
     email: "sakthi@example.com",
